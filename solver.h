@@ -1,0 +1,64 @@
+#ifndef SOLVER
+#define SOLVER
+
+void createCheckpoint();
+void resetLocation();
+void Cw(QString  &face, QString &face_temp);
+void Ccw(QString &face, QString &face_temp);
+void Cw2(QString &face, QString &face_temp);
+void L();
+void Li();
+void R();
+void Ri();
+void U();
+void Uinv();
+void D();
+void Di();
+void F();
+void Fi();
+void B();
+void Bi();
+void L2();
+void R2();
+void U2();
+void D2();
+void F2();
+void B2();
+void l();
+void li();
+void r();
+void ri();
+void u();
+void uinv();
+void d();
+void di();
+void f();
+void fi();
+void b();
+void bi();
+void l2();
+void r2();
+void u2();
+void d2();
+void f2();
+void b2();
+void convertScramble(QString &scram);
+void cross();
+int bringToTop_trial();
+void identifyCornerColours();
+void bringToTop(int n);
+void identifyCornerOrientation();
+void determineY();
+int identifyEdge();
+void cornerFacingF(int n);
+void cornerFacingR(int n);
+void cornerFacingU(int n);
+void f2l();
+void oll();
+void pll();
+void auf();
+QStringList shortSolution(QStringList &list);
+int findMoveCount(QString &s);
+void solveCube();
+
+#endif

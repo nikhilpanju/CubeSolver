@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>scrambleDialogPyra</class>
+ <widget class="QDialog" name="scrambleDialogPyra">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>768</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pyraminx Scramble</string>
+  </property>
+  <widget class="QGraphicsView" name="graphicsViewS">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>5</y>
+     <width>751</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0, 0);
+alternate-background-color: rgba(0, 0, 0, 0);
+border-color: rgba(0, 0, 0, 0);
+border-top-color: rgba(0, 0, 0, 0);
+border-right-color: rgba(0, 0, 0, 0);
+border-bottom-color: rgba(0, 0, 0, 0);
+border-left-color: rgba(0, 0, 0, 0);
+gridline-color: rgba(0, 0, 0, 0);
+selection-color: rgba(0, 0, 0, 0);
+selection-background-color: rgba(0, 0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="OKButton_P">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>420</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>OKButton_P</sender>
+   <signal>clicked()</signal>
+   <receiver>scrambleDialogPyra</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>705</x>
+     <y>432</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>614</x>
+     <y>415</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

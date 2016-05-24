@@ -1,0 +1,2634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>909</width>
+    <height>805</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>MS Shell Dlg 2</family>
+    <pointsize>11</pointsize>
+    <weight>50</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>CubeSolver</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>911</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="tab3x3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>3x3</string>
+     </attribute>
+     <widget class="QLabel" name="moveCountLabel">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>480</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r1">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y5">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>530</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o4">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r8">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r5">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b7">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g6">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b3">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o1">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b6">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g0">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cg">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>20</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w4">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>90</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y6">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>600</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>480</y>
+        <width>361</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cb">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>90</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="movesLabel">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>510</y>
+        <width>361</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o0">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w5">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>90</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="moveCountLabel_static">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>480</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Move Count:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g8">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b1">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>530</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g4">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y8">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>600</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="co">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>20</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w6">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>160</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y0">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>460</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g7">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g1">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w8">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>160</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y1">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>460</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w7">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>160</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cr">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>90</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b8">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b0">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cwhite">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>20</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b4">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="GUIInputButton">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>718</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>GUI Input</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b5">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o7">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="solutionLabel">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>480</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Solution:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>90</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>688</y>
+        <width>881</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="scrambleLabel">
+         <property name="text">
+          <string>Scramble:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="scrambleLineEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="viewScrambleButton">
+         <property name="styleSheet">
+          <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>View Scramble</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="solveButton">
+         <property name="styleSheet">
+          <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Solve</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="b2">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cy">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>90</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r6">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w0">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w1">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>20</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r3">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y7">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>600</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r2">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g5">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r0">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>240</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r7">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>380</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y4">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>530</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>460</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="scrambleInputButton">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>718</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Scramble Input</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="shortSolutionButton">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>650</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r4">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>310</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>20</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearButton">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>170</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="provideScrambleButton">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>650</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Provide Scramble</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab2x2">
+     <attribute name="title">
+      <string>2x2</string>
+     </attribute>
+     <widget class="QPushButton" name="w0_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>30</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w1_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w2_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>130</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w3_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>130</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g2_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>340</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g3_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>340</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g0_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>240</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="g1_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>240</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o2_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>340</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o3_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>340</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o0_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>240</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="o1_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>240</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r2_2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>340</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r3_2">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>340</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r0_2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>240</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="r1_2">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>240</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b2_2">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>340</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b3_2">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>340</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b0_2">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>240</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b1_2">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>240</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y2_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>550</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y3_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>550</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y0_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>450</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="y1_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>450</y>
+        <width>90</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 50);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cg_2">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>20</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>490</y>
+        <width>361</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearButton_2">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>170</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="shortSolutionButton_2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>660</y>
+        <width>261</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="GUIInputButton_2">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>720</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>GUI Input</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="solutionLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>490</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Solution:</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>690</y>
+        <width>881</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="scrambleLabel_2">
+         <property name="text">
+          <string>Scramble:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="scrambleLineEdit_2"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="viewScrambleButton_2">
+         <property name="styleSheet">
+          <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>View Scramble</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="solveButton_2">
+         <property name="styleSheet">
+          <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Solve</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QRadioButton" name="scrambleInputButton_2">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>720</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Scramble Input</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cb_2">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>90</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="co_2">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>20</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cy_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>90</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cr_2">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>90</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cwhite_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>20</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="moveCountLabel_static_2">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>490</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Move Count:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="movesLabel2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>520</y>
+        <width>361</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="moveCountLabel2">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>490</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="provideScrambleButton_2">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>652</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Provide Scramble</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabPyra">
+     <attribute name="title">
+      <string>Pyra</string>
+     </attribute>
+     <widget class="QLabel" name="moveCountLabel_static_P">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>490</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Move Count:</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>690</y>
+        <width>881</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="scrambleLabel_P">
+         <property name="text">
+          <string>Scramble:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="scrambleLineEdit_P"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="viewScrambleButton_P">
+         <property name="styleSheet">
+          <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>View Scramble</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="solveButton_P">
+         <property name="styleSheet">
+          <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Solve</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="moveCountLabel_P">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>490</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cg_P">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>490</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearButton_P">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>640</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cy_P">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>560</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="solutionLabel_P">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>490</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Solution:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="co_P">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>490</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="Line" name="line_P">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>490</y>
+        <width>361</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cb_P">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>560</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="shortSolutionButton_P">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>660</y>
+        <width>261</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="movesLabel_P">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>520</y>
+        <width>361</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="scrambleInputButton_P">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>720</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Scramble Input</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="GUIInputButton_P">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>720</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>GUI Input</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_P">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>5</y>
+        <width>891</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 0, 0, 0);
+alternate-background-color: rgba(0, 0, 0, 0);
+border-style: none;
+gridline-color: rgba(0, 0, 0, 0);
+selection-color: rgba(0, 0, 0, 0);
+selection-background-color: rgba(0, 0, 0, 0);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="provideScrambleButton_P">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>652</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Provide Scramble</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabSQ">
+     <attribute name="title">
+      <string>Sq 1</string>
+     </attribute>
+     <widget class="QRadioButton" name="scrambleInputButton_SQ">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>710</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Scramble Input</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="movesLabel_SQ">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>450</y>
+        <width>371</width>
+        <height>188</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="shortSolutionButton_SQ">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>648</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="provideScrambleButton_SQ">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>643</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Provide Scramble</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_SQ">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>420</y>
+        <width>361</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="moveCountLabel_SQ">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>420</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="moveCountLabel_static_SQ">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>420</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Move Count:</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="GUIInputButton_SQ">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>710</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>GUI Input</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="solutionLabel_SQ">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>420</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Solution:</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="scrambleLineEdit_SQ">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>678</y>
+        <width>571</width>
+        <height>61</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="solveButton_SQ">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>678</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Solve</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="viewScrambleButton_SQ">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>678</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>View Scramble</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="scrambleLabel_SQ">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>680</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scramble:</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_SQ_uF">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>0</y>
+        <width>251</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 0, 0, 0);
+alternate-background-color: rgba(0, 0, 0, 0);
+border-style: none;
+gridline-color: rgba(0, 0, 0, 0);
+selection-color: rgba(0, 0, 0, 0);
+selection-background-color: rgba(0, 0, 0, 0);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_SQ_dF">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>410</y>
+        <width>251</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 0, 0, 0);
+alternate-background-color: rgba(0, 0, 0, 0);
+border-style: none;
+gridline-color: rgba(0, 0, 0, 0);
+selection-color: rgba(0, 0, 0, 0);
+selection-background-color: rgba(0, 0, 0, 0);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_SQ_eL">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>270</y>
+        <width>261</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 0, 0, 0);
+alternate-background-color: rgba(0, 0, 0, 0);
+border-style: none;
+gridline-color: rgba(0, 0, 0, 0);
+selection-color: rgba(0, 0, 0, 0);
+selection-background-color: rgba(0, 0, 0, 0);</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>909</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionInstructions"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionInstructions">
+   <property name="text">
+    <string>Instructions</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>scrambleLineEdit</tabstop>
+  <tabstop>y5</tabstop>
+  <tabstop>o4</tabstop>
+  <tabstop>r8</tabstop>
+  <tabstop>r5</tabstop>
+  <tabstop>b7</tabstop>
+  <tabstop>g6</tabstop>
+  <tabstop>b3</tabstop>
+  <tabstop>o1</tabstop>
+  <tabstop>b6</tabstop>
+  <tabstop>g0</tabstop>
+  <tabstop>r1</tabstop>
+  <tabstop>g3</tabstop>
+  <tabstop>cg</tabstop>
+  <tabstop>w4</tabstop>
+  <tabstop>y6</tabstop>
+  <tabstop>cb</tabstop>
+  <tabstop>o0</tabstop>
+  <tabstop>w5</tabstop>
+  <tabstop>o5</tabstop>
+  <tabstop>g8</tabstop>
+  <tabstop>b1</tabstop>
+  <tabstop>y3</tabstop>
+  <tabstop>g4</tabstop>
+  <tabstop>o6</tabstop>
+  <tabstop>y8</tabstop>
+  <tabstop>co</tabstop>
+  <tabstop>w6</tabstop>
+  <tabstop>y0</tabstop>
+  <tabstop>g7</tabstop>
+  <tabstop>g1</tabstop>
+  <tabstop>w8</tabstop>
+  <tabstop>y1</tabstop>
+  <tabstop>w7</tabstop>
+  <tabstop>cr</tabstop>
+  <tabstop>b8</tabstop>
+  <tabstop>o8</tabstop>
+  <tabstop>b0</tabstop>
+  <tabstop>cwhite</tabstop>
+  <tabstop>b4</tabstop>
+  <tabstop>GUIInputButton</tabstop>
+  <tabstop>b5</tabstop>
+  <tabstop>o7</tabstop>
+  <tabstop>w3</tabstop>
+  <tabstop>o2</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>viewScrambleButton</tabstop>
+  <tabstop>solveButton</tabstop>
+  <tabstop>b2</tabstop>
+  <tabstop>cy</tabstop>
+  <tabstop>o3</tabstop>
+  <tabstop>r6</tabstop>
+  <tabstop>w0</tabstop>
+  <tabstop>w1</tabstop>
+  <tabstop>r3</tabstop>
+  <tabstop>y7</tabstop>
+  <tabstop>g2</tabstop>
+  <tabstop>r2</tabstop>
+  <tabstop>g5</tabstop>
+  <tabstop>r0</tabstop>
+  <tabstop>r7</tabstop>
+  <tabstop>y4</tabstop>
+  <tabstop>y2</tabstop>
+  <tabstop>scrambleInputButton</tabstop>
+  <tabstop>shortSolutionButton</tabstop>
+  <tabstop>r4</tabstop>
+  <tabstop>w2</tabstop>
+  <tabstop>clearButton</tabstop>
+  <tabstop>w0_2</tabstop>
+  <tabstop>w1_2</tabstop>
+  <tabstop>w2_2</tabstop>
+  <tabstop>w3_2</tabstop>
+  <tabstop>g2_2</tabstop>
+  <tabstop>g3_2</tabstop>
+  <tabstop>g0_2</tabstop>
+  <tabstop>g1_2</tabstop>
+  <tabstop>o2_2</tabstop>
+  <tabstop>o3_2</tabstop>
+  <tabstop>o0_2</tabstop>
+  <tabstop>o1_2</tabstop>
+  <tabstop>r2_2</tabstop>
+  <tabstop>r3_2</tabstop>
+  <tabstop>r0_2</tabstop>
+  <tabstop>r1_2</tabstop>
+  <tabstop>b2_2</tabstop>
+  <tabstop>b3_2</tabstop>
+  <tabstop>b0_2</tabstop>
+  <tabstop>b1_2</tabstop>
+  <tabstop>y2_2</tabstop>
+  <tabstop>y3_2</tabstop>
+  <tabstop>y0_2</tabstop>
+  <tabstop>y1_2</tabstop>
+  <tabstop>cg_2</tabstop>
+  <tabstop>clearButton_2</tabstop>
+  <tabstop>shortSolutionButton_2</tabstop>
+  <tabstop>GUIInputButton_2</tabstop>
+  <tabstop>scrambleLineEdit_2</tabstop>
+  <tabstop>viewScrambleButton_2</tabstop>
+  <tabstop>solveButton_2</tabstop>
+  <tabstop>scrambleInputButton_2</tabstop>
+  <tabstop>cb_2</tabstop>
+  <tabstop>co_2</tabstop>
+  <tabstop>cy_2</tabstop>
+  <tabstop>cr_2</tabstop>
+  <tabstop>cwhite_2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
