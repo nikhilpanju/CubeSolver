@@ -12,33 +12,34 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = CubeSolver
 TEMPLATE = app
 
+SOURCES += \
+    Sources/main.cpp \
+    Sources/mainwindow.cpp \
+    Sources/pyra.cpp \
+    Sources/scrambledialog.cpp \
+    Sources/scrambledialog2x2.cpp \
+    Sources/scrambledialogpyra.cpp \
+    Sources/solver.cpp \
+    Sources/solver2x2.cpp \
+    Sources/solverpyra.cpp \
+    Sources/solversq.cpp \
+    Sources/sq1.cpp \
+    Sources/tab2x2.cpp \
+    Sources/tab3x3.cpp
+HEADERS  += \
+    Header/mainwindow.h \
+    Header/pyra.h \
+    Header/scrambledialog.h \
+    Header/scrambledialog2x2.h \
+    Header/scrambledialogpyra.h \
+    Header/solver.h \
+    Header/solver2x2.h \
+    Header/solverpyra.h \
+    Header/solversq.h \
+    Header/sq1.h
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    solver.cpp \
-    scrambledialog.cpp \
-    solver2x2.cpp \
-    tab2x2.cpp \
-    scrambledialog2x2.cpp \
-    solverpyra.cpp \
-    pyra.cpp \
-    tab3x3.cpp \
-    scrambledialogpyra.cpp \
-    solversq.cpp \
-    sq1.cpp
-
-HEADERS  += mainwindow.h \
-    solver.h \
-    scrambledialog.h \
-    solver2x2.h \
-    scrambledialog2x2.h \
-    solverpyra.h \
-    pyra.h \
-    scrambledialogpyra.h \
-    solversq.h \
-    sq1.h
-
-FORMS    += mainwindow.ui \
-    scrambledialog.ui \
-    scrambledialog2x2.ui \
-    scrambledialogpyra.ui
+FORMS    += \
+    UI/mainwindow.ui \
+    UI/scrambledialog.ui \
+    UI/scrambledialog2x2.ui \
+    UI/scrambledialogpyra.ui

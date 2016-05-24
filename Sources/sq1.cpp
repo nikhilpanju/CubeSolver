@@ -1,7 +1,7 @@
 #include "ui_mainwindow.h"
-#include "solversq.h"
-#include "mainwindow.h"
-#include "sq1.h"
+#include "../Header/solversq.h"
+#include "../Header/mainwindow.h"
+#include "../Header/sq1.h"
 
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////// External Variables //////////////////////////////////

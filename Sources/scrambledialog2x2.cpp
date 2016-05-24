@@ -1,4 +1,4 @@
-#include "scrambledialog2x2.h"
+#include "../Header/scrambledialog2x2.h"
 #include "ui_scrambledialog2x2.h"
 
 // Initialize the scramble variables which store the scrambled state of the cube

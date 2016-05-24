@@ -1,4 +1,4 @@
-#include "scrambledialogpyra.h"
+#include "../Header/scrambledialogpyra.h"
 #include "ui_scrambledialogpyra.h"
 
 // Initialize the scramble variables which store the scrambled state of the cube

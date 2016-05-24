@@ -1,5 +1,5 @@
-#include "mainwindow.h"
-#include "solver.h"
+#include "../Header/mainwindow.h"
+#include "../Header/solver.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

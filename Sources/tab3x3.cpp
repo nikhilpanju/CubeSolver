@@ -1,7 +1,7 @@
 #include "ui_mainwindow.h"
-#include "scrambledialog.h"
-#include "solver.h"
-#include "mainwindow.h"
+#include "../Header/scrambledialog.h"
+#include "../Header/solver.h"
+#include "../Header/mainwindow.h"
 
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////// External Variables //////////////////////////////////
