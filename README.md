@@ -5,7 +5,7 @@ An application which solves any state of a Rubik's cube (and other puzzles) base
 ## Download
 Install CubeSolver 2.5 using the CubeSolverSetup.exe file in the /Setup folder
 
-##Instructions
+## Instructions
 #### GUI:
 Colour the cube using the palette provided, select the **GUI Input** radio button and click **Solve** to get a solution.
 (Note: Square-1 state cannot be set using GUI)
