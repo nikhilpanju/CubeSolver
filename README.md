@@ -5,6 +5,11 @@ An application which solves any state of a Rubik's cube (and other puzzles) base
 ## Download
 Install CubeSolver 2.5 using the CubeSolverSetup.exe file in the /Setup folder
 
+## Screenshots
+![alt text](https://github.com/nikhilpanju/CubeSolver/blob/master/Demo/3x3.png "3x3")
+![alt text](https://github.com/nikhilpanju/CubeSolver/blob/master/Demo/pyra.png "Pyraminx")
+![alt text](https://github.com/nikhilpanju/CubeSolver/blob/master/Demo/sq1.png "Square 1")
+
 ## Instructions
 #### GUI:
 Colour the cube using the palette provided, select the **GUI Input** radio button and click **Solve** to get a solution.
